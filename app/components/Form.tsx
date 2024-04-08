@@ -17,7 +17,7 @@ export default function FormElement(){
         }}>
         <input className="border p-1 border-gray-800 " type="text" name="input" />
         <SubmitButton/>
-        <p className="text-red-500">{state as string }</p>
+        <p className="text-red-500">{state as unknown as string }</p>
     </form>
     )
 }
